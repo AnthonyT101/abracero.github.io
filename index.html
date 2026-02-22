@@ -7,8 +7,17 @@
 <body>
 
 <header>
-    <h1>Anthony Bracero</h1>
-    <p>Systems Administrator | Infrastructure & Security Automation</p>
+    <div class="container hero">
+        <h1>Anthony Bracero</h1>
+        <p class="subtitle">
+            Systems Administrator focused on Infrastructure, Security, and Automation.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="projects.html" class="button">View Projects</a>
+            <a href="certifications.html" class="button secondary">Certifications</a>
+        </div>
+    </div>
 </header>
 
 <nav>
@@ -19,21 +28,51 @@
     <a href="personal-blog.html">Personal Blog</a>
 </nav>
 
-<div class="container">
-    <h2>About Me</h2>
+<section class="container center-section">
+    <h2>What I Do</h2>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>Infrastructure Management</h3>
+            <p>
+                Manage Windows servers, macOS devices, thin clients, and enterprise endpoints
+                with structured patching and lifecycle oversight.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Security & Vulnerability Remediation</h3>
+            <p>
+                Led a 59% net reduction in enterprise vulnerabilities through
+                structured remediation strategy and cross-team collaboration.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Automation & Reporting</h3>
+            <p>
+                Built Python-based automation workflows that generate
+                weekly and monthly executive-level reporting.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="container center-section">
+    <h2>Featured Work</h2>
 
     <div class="card">
+        <h3>Enterprise Vulnerability Reduction Initiative</h3>
         <p>
-            IT Infrastructure professional specializing in endpoint management,
-            vulnerability remediation, and automation. Reduced enterprise
-            vulnerability count by 59% through structured patching and reporting initiatives.
-            Experienced managing Windows servers, macOS devices, thin clients,
-            and enterprise patching workflows.
+            Reduced vulnerability counts by 59% while building automated
+            tracking dashboards that improved leadership visibility and
+            security alignment.
         </p>
-
-        <a href="#" class="button">Download Resume</a>
+        <a href="projects.html" class="button">See Full Project Details</a>
     </div>
-</div>
+</section>
 
 <footer>
     <p>© 2026 Anthony Bracero</p>
