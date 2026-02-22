@@ -1,38 +1,91 @@
-body {
-    font-family: Arial, sans-serif;
+/* Global Reset */
+* {
     margin: 0;
-    background-color: #f4f4f4;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f8f9fb;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* Header / Hero */
+header {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    padding: 100px 20px;
     text-align: center;
 }
 
-header {
-    background: #111;
-    color: white;
-    padding: 40px 0;
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
 }
 
+header p {
+    font-size: 1.2rem;
+    opacity: 0.85;
+}
+
+/* Navigation */
 nav {
-    background: #333;
-    padding: 15px;
+    background: white;
+    padding: 18px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 100;
 }
 
 nav a {
-    color: white;
-    margin: 0 15px;
+    margin: 0 20px;
     text-decoration: none;
-    font-weight: bold;
+    color: #0f172a;
+    font-weight: 600;
+    transition: 0.2s ease;
 }
 
-section {
-    padding: 40px 20px;
+nav a:hover {
+    color: #2563eb;
 }
 
+/* Section Titles */
 h2 {
-    color: #222;
+    font-size: 2rem;
+    margin-bottom: 30px;
 }
 
+/* Cards */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
 footer {
-    background: #111;
+    background: #0f172a;
     color: white;
-    padding: 20px;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
 }
