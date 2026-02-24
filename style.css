@@ -27,11 +27,19 @@ body{
 
 /* Header / Hero */
 header{
+  background: transparent;
+  color: var(--text);
+  padding:24px 0;
+  text-align:center;
+}
+/* Scoped hero styles for the homepage: use a .hero container inside header */
+header .hero{
   background: linear-gradient(135deg,var(--bg) 0%, #0b1220 100%);
   color: #ffffff;
   padding:64px 24px;
+  border-radius:12px;
 }
-header .header-content{max-width:980px;margin:0 auto;text-align:center}
+header .header-content, header .hero{max-width:980px;margin:0 auto;text-align:center}
 header h1{font-size:clamp(1.8rem,4vw,3rem);font-weight:700;margin-bottom:12px;letter-spacing:-0.02em}
 header p{color:rgba(255,255,255,0.9);font-size:1.05rem}
 
@@ -82,13 +90,7 @@ footer{background:linear-gradient(180deg,#071024,#0b1220);color:#cbd5e1;padding:
   *{transition:none!important}
 }
 
-/* Dark mode support */
-@media (prefers-color-scheme:dark){
-  :root{--bg:#0b1220;--surface:#071226;--text:#e6eef8;--muted:#9fb0c9;--glass:rgba(255,255,255,0.03)}
-  body{background:linear-gradient(180deg,#061025,#07142a)}
-  nav .nav-inner{background:rgba(10,14,22,0.65)}
-  footer{background:linear-gradient(180deg,#031021,#041226)}
-}
+/* Removed dark-mode override to keep site light and visible */
 
 /* Small adjustments for very small screens */
 @media (max-width:420px){
